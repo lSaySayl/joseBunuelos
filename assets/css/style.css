@@ -414,6 +414,26 @@ body.active { overflow: hidden; }
   border-block-end: 3px dotted var(--camel);
 }
 
+.menu .container .botones {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.menu .container .botones a{
+  margin-left: 20px;
+  width: 250px;
+  margin-bottom: 20px;
+  max-width: 100vh;
+  
+
+  
+}
+
+
+
 
 /*-----------------------------------*\
   #FOOTER
