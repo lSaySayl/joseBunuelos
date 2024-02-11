@@ -381,6 +381,11 @@ body.active { overflow: hidden; }
 
 .menu .section-title { margin-block-end: 50px; }
 
+.menu .section-subtitle {
+  color: rgb(156, 156, 156);
+  margin-bottom: 20px;
+}
+
 .menu .grid-list {
   background-color: var(--rich-black-fogra-39);
   padding: 20px;
@@ -716,7 +721,7 @@ body.active { overflow: hidden; }
    * MENU and BLOG
    */
 
-  :is(.menu, .blog) .section-title { margin-block-end: 70px; }
+  :is(.menu, .blog) .section-title { margin-block-end: 20px; }
 
   .menu .grid-list {
     grid-template-columns: 1fr 1fr;

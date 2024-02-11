@@ -1,1167 +1,1138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 
     - primary meta tags
   -->
-    <title>CaféDeJosé</title>
-    <meta name="title" content="Keofi - Great coffee good vibes" />
-    <meta
-      name="description"
-      content="This is a coffee shop html template made by codewithsadee"
-    />
+  <title>CaféDeJosé</title>
+  <meta name="title" content="Keofi - Great coffee good vibes" />
+  <meta name="description" content="This is a coffee shop html template made by codewithsadee" />
 
-    <!-- 
+  <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-    <!-- 
+  <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!-- 
+  <!-- 
     - google font link
   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merienda&family=Oswald:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merienda&family=Oswald:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- 
+  <!-- 
     - preload images
   -->
-    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
-  </head>
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+</head>
 
-  <body>
-    <!-- 
+<body>
+  <!-- 
     - #HEADER
   -->
 
-    <header class="header">
-      <div class="header-top">
-        <div class="container">
-          <p class="header-top-text">
-            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-            <span class="span">Horario de apertura :</span> 06:30 a. m. - 07:00
-            p. m.
-          </p>
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <p class="header-top-text">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          <span class="span">Horario de apertura :</span> 06:30 a. m. - 07:00
+          p. m.
+        </p>
 
-          <ul class="social-list">
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <p class="header-top-text">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          <span class="span">Ubicación :</span> Calle 47 - 70A # 30 - Florida
+          nueva
+        </p>
+      </div>
+    </div>
+
+    <div class="header-bottom" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./assets/images/Dorado.png" alt="logoYapan" class="w-100" />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
             <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
+              <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
+              <a href="#about" class="navbar-link" data-nav-link>Nosotros</a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
+              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
+              <a href="#footer" class="navbar-link" data-nav-link>Contacto</a>
             </li>
           </ul>
 
-          <p class="header-top-text">
-            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-            <span class="span">Ubicación :</span> Calle 47 - 70A # 30 - Florida
-            nueva
-          </p>
-        </div>
+          <a href="#menu" class="btn btn-primary">Menú</a>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="span"></span>
+          <span class="span"></span>
+        </button>
       </div>
+    </div>
+  </header>
 
-      <div class="header-bottom" data-header>
-        <div class="container">
-          <a href="#" class="logo">
-            <img
-              src="./assets/images/Dorado.png"
-              alt="logoYapan"
-              class="w-100"
-            />
-          </a>
-
-          <nav class="navbar" data-navbar>
-            <ul class="navbar-list">
-              <li>
-                <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
-              </li>
-
-              <li>
-                <a href="#about" class="navbar-link" data-nav-link>Nosotros</a>
-              </li>
-
-              <li>
-                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-              </li>
-
-              <li>
-                <a href="#footer" class="navbar-link" data-nav-link>Contacto</a>
-              </li>
-            </ul>
-
-            <a href="#menu" class="btn btn-primary">Menú</a>
-          </nav>
-
-          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-            <span class="span"></span>
-            <span class="span"></span>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <article>
-        <!-- 
+  <main>
+    <article>
+      <!-- 
         - #HERO
       -->
 
-        <section
-          class="section hero has-bg-image"
-          id="home"
-          aria-labelledby="hero-label"
-          style="background-image: url('./assets/images/HeroDos.jpg')"
-        >
-          <div class="container">
-            <h1 class="h1 hero-title reveal-left" id="hero-label" data-reveal>
-              Para iniciar un lindo día, una taza de café
-            </h1>
-          </div>
-        </section>
+      <section class="section hero has-bg-image" id="home" aria-labelledby="hero-label"
+        style="background-image: url('./assets/images/HeroDos.jpg')">
+        <div class="container">
+          <h1 class="h1 hero-title reveal-left" id="hero-label" data-reveal>
+            Para iniciar un lindo día, una taza de café
+          </h1>
+        </div>
+      </section>
 
-        <!-- 
+      <!-- 
         - #MENU CAFE
       -->
 
-        <section
-          class="section menu has-bg-image"
-          id="menu"
-          aria-labelledby="menu-label"
-          style="
+      <section class="section menu has-bg-image" id="menu" aria-labelledby="menu-label" style="
             background-image: url('./assets/images/ceyda-ciftci-fr3Nttk364E-unsplash.jpg');
-          "
-        >
-          <div class="container">
-            <p class="section-subtitle text-center" data-reveal>Menú</p>
+          ">
+        <div class="container">
 
-            <div class="botones">
-              <a href="#cafes" class="prueba btn btn-primary"><p>Cafés</p></a>
 
-              <a href="#acompañantes" class="btn btn-primary">Acompañantes</a>
+          <div class="botones">
+            <a href="#desayunos" class="btn btn-primary">Desayunos</a>
+            <a href="#migas" class="btn btn-primary">Migas</a>
+            <a href="#fritos" class="btn btn-primary">Fritos</a>
+            <a href="#almuerzos" class="btn btn-primary">Almuerzos</a>
+            <a href="#sandwiches" class="btn btn-primary">Sandwiches</a>
 
-              <a href="#desayunos" class="btn btn-primary">Desayunos</a>
+            <a href="#cafes" class="prueba btn btn-primary">
+              <p>Cafés</p>
+            </a>
 
-              <a href="#migas" class="btn btn-primary">Migas</a>
+            <a href="#chocolates" class="btn btn-primary">Chocolates</a>
 
-              <a href="#chocolates" class="btn btn-primary">Chocolates</a>
-
-              <a href="#almuerzos" class="btn btn-primary">Almuerzos</a>
-            </div>
-
-            <h2 class="h2 section-title text-center" id="cafes" data-reveal>
-              Elige el mejor café
-            </h2>
-
-            <ul class="grid-list">
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Café tres pasos</h3>
-
-                    <data class="card-price has-before" value="7.5">$7.5</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Capuchino</h3>
-
-                    <data class="card-price has-before" value="6">$6.5</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Irlandés</h3>
-                    <data class="card-price has-before" value="16">$16</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Malteada de café</h3>
-                    <data class="card-price has-before" value="13">$13.5</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Malteada de oreo</h3>
-                    <data class="card-price has-before" value="13">$12</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Café bombón</h3>
-
-                    <data class="card-price has-before" value="5.5">$5.5</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Latte caliente o frío</h3>
-
-                    <data class="card-price has-before" value="5.5">$7</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Tinto</h3>
-
-                    <data class="card-price has-before" value="5.5">$1.6</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Aromática de jengibre</h3>
-
-                    <data class="card-price has-before" value="5.5">$1.6</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Expreso</h3>
-
-                    <data class="card-price has-before" value="5.5">$4</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Expreso doble</h3>
-
-                    <data class="card-price has-before" value="5.5">$5.5</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Americano</h3>
-
-                    <data class="card-price has-before" value="5.5">$5.5</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Café con leche</h3>
-
-                    <data class="card-price has-before" value="5.5">$3</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Perico</h3>
-
-                    <data class="card-price has-before" value="5.5">$2.5</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Mocca frío o caliente</h3>
-
-                    <data class="card-price has-before" value="5.5">$7</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Milo caliente</h3>
-
-                    <data class="card-price has-before" value="5.5">$5.5</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Milo frío</h3>
-
-                    <data class="card-price has-before" value="5.5">$8</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Carajillo</h3>
-
-                    <data class="card-price has-before" value="5.5">$5.5</data>
-                  </div>
-                </div>
-              </li>
-            </ul>
           </div>
-        </section>
 
-        <!-- 
+          <h2 class="h2 section-title text-center" id="cafes" data-reveal>
+            Elige el mejor café
+          </h2>
+
+          <ul class="grid-list">
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Café tres pasos</h3>
+
+                  <data class="card-price has-before" value="7.5">$7.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Capuchino</h3>
+
+                  <data class="card-price has-before" value="6">$6.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Irlandés</h3>
+                  <data class="card-price has-before" value="16">$16</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Malteada de café</h3>
+                  <data class="card-price has-before" value="13">$13.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Malteada de oreo</h3>
+                  <data class="card-price has-before" value="13">$12</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Café bombón</h3>
+
+                  <data class="card-price has-before" value="5.5">$5.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Latte caliente o frío</h3>
+
+                  <data class="card-price has-before" value="5.5">$7</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Tinto</h3>
+
+                  <data class="card-price has-before" value="5.5">$1.6</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Aromática de jengibre</h3>
+
+                  <data class="card-price has-before" value="5.5">$1.6</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Expreso</h3>
+
+                  <data class="card-price has-before" value="5.5">$4</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Expreso doble</h3>
+
+                  <data class="card-price has-before" value="5.5">$5.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Americano</h3>
+
+                  <data class="card-price has-before" value="5.5">$5.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Café con leche</h3>
+
+                  <data class="card-price has-before" value="5.5">$3</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Perico</h3>
+
+                  <data class="card-price has-before" value="5.5">$2.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Mocca frío o caliente</h3>
+
+                  <data class="card-price has-before" value="5.5">$7</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Milo caliente</h3>
+
+                  <data class="card-price has-before" value="5.5">$5.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Milo frío</h3>
+
+                  <data class="card-price has-before" value="5.5">$8</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Carajillo</h3>
+
+                  <data class="card-price has-before" value="5.5">$5.5</data>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
         - #MENU COMIDA
       -->
 
-        <section
-          class="section menu has-bg-image"
-          id="menu"
-          aria-labelledby="menu-label"
-          style="
+      <section class="section menu has-bg-image" id="menu" aria-labelledby="menu-label" style="
             background-image: url('./assets/images/ceyda-ciftci-fr3Nttk364E-unsplash.jpg');
-          "
-        >
-          <div class="container" id="acompañantes">
-            <p class="section-subtitle text-center" data-reveal>Menú</p>
+          ">
+        <div class="container" id="fritos">
 
-            <h2
-              class="h2 section-title text-center"
-              id="menu-label"
-              data-reveal
-            >
-              Fritos
+
+          <h2 class="h2 section-title text-center" id="menu-label" data-reveal>
+            Fritos
+          </h2>
+
+          <ul class="grid-list">
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Buñuelo tradicional</h3>
+
+                  <data class="card-price has-before" value="4.9">$1.2</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Buñuelo mozzarella</h3>
+
+                  <data class="card-price has-before" value="4.9">$2.2</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Buñuelo bocadillo y queso</h3>
+
+                  <data class="card-price has-before" value="3.5">$3</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Empanada de arroz con carne</h3>
+
+                  <data class="card-price has-before" value="6.0">$2.7</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Empanada de papa con carne</h3>
+
+                  <data class="card-price has-before" value="2.8">$2.7</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Empanada mixta</h3>
+
+                  <data class="card-price has-before" value="7.5">$3.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Empanada de carne desmechada</h3>
+
+                  <data class="card-price has-before" value="7.5">$3.8</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Pastel de pollo</h3>
+
+                  <data class="card-price has-before" value="7.5">$5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Palito de queso</h3>
+
+                  <data class="card-price has-before" value="7.5">$3.7</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    Panzerotti
+                  </h3>
+
+                  <data class="card-price has-before" value="7.5">$5</data>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- #MENÚ DESAYUNOS -->
+
+      <section class="section menu has-bg-image" id="menu" aria-labelledby="menu-label" style="
+            background-image: url('./assets/images/ceyda-ciftci-fr3Nttk364E-unsplash.jpg');
+          ">
+        <div class="container" id="desayunos">
+
+
+          <h2 class="h2 section-title text-center" id="menu-label" data-reveal>
+            Elige el mejor desayuno
+          </h2>
+
+          <ul class="grid-list">
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    Huevos con tocineta y maicitos, arepa con quesito,
+                    mantequilla, chocolate oscuro, con leche o café con leche
+                  </h3>
+
+                  <data class="card-price has-before" value="4.9">$15.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    Huevos con hogao, arepa con quesito, mantequilla,
+                    chocolate oscuro, con leche o café con leche
+                  </h3>
+
+                  <data class="card-price has-before" value="4.9">$13.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    Huevos con salchicha, arepa con quesito, mantequilla,
+                    chocolate oscuro, con leche o café con leche
+                  </h3>
+
+                  <data class="card-price has-before" value="4.9">$12.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    Huevos con jamón y queso, arepa con quesito mantequilla,
+                    chocolate oscuro, con leche o café con leche
+                  </h3>
+
+                  <data class="card-price has-before" value="4.9">$13</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    Huevos revueltos o en cacerola, con arepa y quesito,
+                    mantequilla, chocolate oscuro, con leche o café con leche
+                  </h3>
+
+                  <data class="card-price has-before" value="4.9">$10.5</data>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    Calentao, frijoles con arroz, arepa, quesito, huevos y
+                    mantequilla, chocolate oscuro, con leche o café con leche
+                  </h3>
+
+                  <data class="card-price has-before" value="4.9">$15</data>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    Huevos en cacerola con salchicha, pan, quesito y mantequilla, chocolate oscuro, con leche o café con
+                    leche
+                  </h3>
+
+                  <data class="card-price has-before" value="4.9">$12.5</data>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    Arepa con quesito y mantequilla
+                  </h3>
+
+                  <data class="card-price has-before" value="4.9">$4</data>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    Huevos en cacerola, tocineta, pan, salsa de tomate y aguacate, chocolate oscuro, con leche o café
+                    con leche
+                  </h3>
+
+                  <data class="card-price has-before" value="4.9">$15</data>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- #MENÚ MIGAS -->
+
+      <section class="section menu has-bg-image" id="menu" aria-labelledby="menu-label" style="
+            background-image: url('./assets/images/ceyda-ciftci-fr3Nttk364E-unsplash.jpg');
+          ">
+        <div class="container" id="migas">
+
+
+          <h2 class="h2 section-title text-center" id="menu-label" data-reveal>
+            Ármalas como tú quieras
+          </h2>
+
+          <ul class="grid-list">
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    Migas de José: Chocolate oscuro, buñuelos, pan de queso,
+                    galletas ducales, quesito y arepa
+                  </h3>
+
+                  <data class="card-price has-before" value="4.9">$12</data>
+                </div>
+              </div>
+            </li>
+
+            <h2 style="text-align: center; color: white">
+              Topping de bebidas
             </h2>
 
-            <ul class="grid-list">
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Buñuelo tradicional</h3>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Chocolate oscuro</h3>
 
-                    <data class="card-price has-before" value="4.9">$1.2</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$3.5</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Buñuelo mozzarella</h3>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Chocolate con leche</h3>
 
-                    <data class="card-price has-before" value="4.9">$2.2</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$4</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Buñuelo bocadillo y queso</h3>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Leche</h3>
 
-                    <data class="card-price has-before" value="3.5">$3</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$4</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Empanada de arroz con carne</h3>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Café con leche</h3>
 
-                    <data class="card-price has-before" value="6.0">$2.7</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$4</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Empanada de papa con carne</h3>
+            <h2 style="text-align: center; color: white">Topping de migas</h2>
 
-                    <data class="card-price has-before" value="2.8">$2.7</data>
-                  </div>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Buñuelos</h3>
+
+                  <data class="card-price has-before" value="4.9">$2.4</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Empanada mixta</h3>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Pan de queso</h3>
 
-                    <data class="card-price has-before" value="7.5">$3.5</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$4</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Empanada de carne desmechada</h3>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Galletas ducales</h3>
 
-                    <data class="card-price has-before" value="7.5">$3.8</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$2</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Pastel de pollo</h3>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Galletas saltín</h3>
 
-                    <data class="card-price has-before" value="7.5">$5</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$1.6</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Palito de queso</h3>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Arepa</h3>
 
-                    <data class="card-price has-before" value="7.5">$3.7</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$2</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">
-                      Panzerotti
-                    </h3>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Queso mozzarella</h3>
 
-                    <data class="card-price has-before" value="7.5">$5</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$3</data>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </section>
+              </div>
+            </li>
 
-        <!-- #MENÚ DESAYUNOS -->
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Quesito</h3>
 
-        <section
-          class="section menu has-bg-image"
-          id="menu"
-          aria-labelledby="menu-label"
-          style="
+                  <data class="card-price has-before" value="4.9">$2.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Pan</h3>
+
+                  <data class="card-price has-before" value="4.9">$2</data>
+                </div>
+              </div>
+            </li>
+
+            <h2 style="text-align: center; color: white">Otros toppings</h2>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Canela</h3>
+
+                  <data class="card-price has-before" value="4.9">$500</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Vainilla</h3>
+
+                  <data class="card-price has-before" value="4.9">$500</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Brandy</h3>
+
+                  <data class="card-price has-before" value="4.9">$2.5</data>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Ron</h3>
+
+                  <data class="card-price has-before" value="4.9">$2.5</data>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- #MENÚ OTRAS BEBIDAS -->
+
+      <section class="section menu has-bg-image" id="menu" aria-labelledby="menu-label" style="
             background-image: url('./assets/images/ceyda-ciftci-fr3Nttk364E-unsplash.jpg');
-          "
-        >
-          <div class="container" id="desayunos">
-            <p class="section-subtitle text-center" data-reveal>Menú</p>
+          ">
+        <div class="container" id="chocolates">
 
-            <h2
-              class="h2 section-title text-center"
-              id="menu-label"
-              data-reveal
-            >
-              Elige el mejor desayuno
-            </h2>
 
-            <ul class="grid-list">
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">
-                      Huevos con tocineta y maicitos, arepa con quesito,
-                      mantequilla, chocolate oscuro, con leche o café con leche
-                    </h3>
+          <h2 class="h2 section-title text-center" id="menu-label" data-reveal>
+            Elige un gusto para el frío
+          </h2>
 
-                    <data class="card-price has-before" value="4.9">$15.5</data>
-                  </div>
+          <ul class="grid-list">
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    Chocolate con queso mozzarella
+                  </h3>
+
+                  <data class="card-price has-before" value="4.9">$5.5</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">
-                      Huevos con hogao, arepa con quesito, mantequilla,
-                      chocolate oscuro, con leche o café con leche
-                    </h3>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Chocolate con quesito</h3>
 
-                    <data class="card-price has-before" value="4.9">$13.5</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$4.5</data>
                 </div>
-              </li>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">
-                      Huevos con salchicha, arepa con quesito, mantequilla,
-                      chocolate oscuro, con leche o café con leche
-                    </h3>
+      <!-- #MENÚ Almuerzos -->
 
-                    <data class="card-price has-before" value="4.9">$12.5</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">
-                      Huevos con jamón y queso, arepa con quesito mantequilla,
-                      chocolate oscuro, con leche o café con leche
-                    </h3>
-
-                    <data class="card-price has-before" value="4.9">$13</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">
-                      Huevos revueltos o en cacerola, con arepa y quesito,
-                      mantequilla, chocolate oscuro, con leche o café con leche
-                    </h3>
-
-                    <data class="card-price has-before" value="4.9">$10.5</data>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">
-                      Calentao, frijoles con arroz, arepa, quesito, huevos y
-                      mantequilla, chocolate oscuro, con leche o café con leche
-                    </h3>
-  
-                    <data class="card-price has-before" value="4.9">$15</data>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">
-                      Huevos en cacerola con salchicha, pan, quesito y mantequilla, chocolate oscuro, con leche o café con leche
-                    </h3>
-  
-                    <data class="card-price has-before" value="4.9">$12.5</data>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">
-                      Arepa con quesito y mantequilla
-                    </h3>
-
-                    <data class="card-price has-before" value="4.9">$4</data>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">
-                      Huevos en cacerola, tocineta, pan, salsa de tomate y aguacate, chocolate oscuro, con leche o café con leche
-                    </h3>
-  
-                    <data class="card-price has-before" value="4.9">$15</data>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- #MENÚ MIGAS -->
-
-        <section
-          class="section menu has-bg-image"
-          id="menu"
-          aria-labelledby="menu-label"
-          style="
+      <section class="section menu has-bg-image" id="menu" aria-labelledby="menu-label" style="
             background-image: url('./assets/images/ceyda-ciftci-fr3Nttk364E-unsplash.jpg');
-          "
-        >
-          <div class="container" id="migas">
-            <p class="section-subtitle text-center" data-reveal>Menú</p>
+          ">
+        <div class="container" id="almuerzos">
 
-            <h2
-              class="h2 section-title text-center"
-              id="menu-label"
-              data-reveal
-            >
-              Ármalas como tú quieras
-            </h2>
 
-            <ul class="grid-list">
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">
-                      Migas de José: Chocolate oscuro, buñuelos, pan de queso,
-                      galletas ducales, quesito y arepa
-                    </h3>
+          <h2 class="h2 section-title text-center" id="menu-label" data-reveal>
+            Almuerzos
+          </h2>
 
-                    <data class="card-price has-before" value="4.9">$12</data>
-                  </div>
+          <ul class="grid-list">
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Menú del día</h3>
+                  <p>Pregunta por el menú del día</p>
+
+                  <data class="card-price has-before" value="4.9">$15</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <h2 style="text-align: center; color: white">
-                Topping de bebidas
-              </h2>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Cazuela</h3>
+                  <p>Acompañada de frijoles, chicharrón, chorizo, aguacate, maduro, ripio de papa, maicitos, arroz y
+                    ensalada.</p>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Chocolate oscuro</h3>
-
-                    <data class="card-price has-before" value="4.9">$3.5</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$25</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Chocolate con leche</h3>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Bande paisa</h3>
+                  <p>Acompañada de frijoles, chicharron, huevo, maduro, morzilla, chorizo, carne molida, aguacate, arroz
+                    y ensalada.</p>
 
-                    <data class="card-price has-before" value="4.9">$4</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$35</data>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Leche</h3>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Costillas en BBQ</h3>
+                  <p>Costillas de 400gr en crudo bañadas en salsa BBQ, acompañadas de papas criollas al vapor y
+                    ensalada.</p>
 
-                    <data class="card-price has-before" value="4.9">$4</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$35</data>
                 </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Café con leche</h3>
-
-                    <data class="card-price has-before" value="4.9">$4</data>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Porción de sopa</h3>
+                  <data class="card-price has-before" value="4.9">$8</data>
                 </div>
-              </li>
-
-              <h2 style="text-align: center; color: white">Topping de migas</h2>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Buñuelos</h3>
-
-                    <data class="card-price has-before" value="4.9">$2.4</data>
-                  </div>
+              </div>
+            </li>
+            <h2 style="text-align: center; color: white">Adiciones</h2>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Chicharron</h3>
+                  <data class="card-price has-before" value="4.9">$7</data>
                 </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Pan de queso</h3>
-
-                    <data class="card-price has-before" value="4.9">$4</data>
-                  </div>
+              </div>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Pollo</h3>
+                  <data class="card-price has-before" value="4.9">$7</data>
                 </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Galletas ducales</h3>
-
-                    <data class="card-price has-before" value="4.9">$2</data>
-                  </div>
+              </div>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Cerdo</h3>
+                  <data class="card-price has-before" value="4.9">$7</data>
                 </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Galletas saltín</h3>
-
-                    <data class="card-price has-before" value="4.9">$1.6</data>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Carne desmechada</h3>
+                  <data class="card-price has-before" value="4.9">$8</data>
                 </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Arepa</h3>
-
-                    <data class="card-price has-before" value="4.9">$2</data>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Carne de res</h3>
+                  <data class="card-price has-before" value="4.9">$10</data>
                 </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Queso mozzarella</h3>
-
-                    <data class="card-price has-before" value="4.9">$3</data>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Chorizo</h3>
+                  <data class="card-price has-before" value="4.9">$5</data>
                 </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Quesito</h3>
-
-                    <data class="card-price has-before" value="4.9">$2.5</data>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Morzilla</h3>
+                  <data class="card-price has-before" value="4.9">$5</data>
                 </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Pan</h3>
-
-                    <data class="card-price has-before" value="4.9">$2</data>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Carne en polvo</h3>
+                  <data class="card-price has-before" value="4.9">$8</data>
                 </div>
-              </li>
-
-              <h2 style="text-align: center; color: white">Otros toppings</h2>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Canela</h3>
-
-                    <data class="card-price has-before" value="4.9">$500</data>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Huevos</h3>
+                  <data class="card-price has-before" value="4.9">$2.5</data>
                 </div>
-              </li>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Vainilla</h3>
-
-                    <data class="card-price has-before" value="4.9">$500</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Brandy</h3>
-
-                    <data class="card-price has-before" value="4.9">$2.5</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Ron</h3>
-
-                    <data class="card-price has-before" value="4.9">$2.5</data>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- #MENÚ OTRAS BEBIDAS -->
-
-        <section
-          class="section menu has-bg-image"
-          id="menu"
-          aria-labelledby="menu-label"
-          style="
+      <!-- MENÚ SANDWICHES -->
+      <section class="section menu has-bg-image" id="menu" aria-labelledby="menu-label" style="
             background-image: url('./assets/images/ceyda-ciftci-fr3Nttk364E-unsplash.jpg');
-          "
-        >
-          <div class="container" id="chocolates">
-            <p class="section-subtitle text-center" data-reveal>Menú</p>
+          ">
+        <div class="container" id="sandwiches">
 
-            <h2
-              class="h2 section-title text-center"
-              id="menu-label"
-              data-reveal
-            >
-              Elige un gusto para el frío
-            </h2>
 
-            <ul class="grid-list">
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">
-                      Chocolate con queso mozzarella
-                    </h3>
+          <h2 class="h2 section-title text-center" id="menu-label" data-reveal>
+            Sandwiches
+          </h2>
+          
+          <h3 class="section-subtitle text-center">Todos los sandwiches vienen acompañados de papas o platanos con nuestra salsa de la casa</h3>
+          <ul class="grid-list">
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Lupe</h3>
+                  <p>Sandwiche de pollo en julianas, queso siete cueros, tomate cherry, lechuga y aguacate</p>
 
-                    <data class="card-price has-before" value="4.9">$5.5</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$15</data>
                 </div>
-              </li>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Romeo</h3>
+                  <p>Sandwiche con costilla BBQ desmechada, con lechuga, tomate y queso parmesano</p>
 
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Chocolate con quesito</h3>
+                  <data class="card-price has-before" value="4.9">$15</data>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card" data-reveal>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Progreso</h3>
+                  <p>Sandwiche con salami italiano, tomates secos, queso mozzarella, lechuga y aguacate</p>
 
-                    <data class="card-price has-before" value="4.9">$4.5</data>
-                  </div>
+                  <data class="card-price has-before" value="4.9">$15</data>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </section>
+              </div>
+            </li>
 
-        <!-- #MENÚ Almuerzos -->
+          </ul>
+        </div>
+      </section>
 
-        <section
-          class="section menu has-bg-image"
-          id="menu"
-          aria-labelledby="menu-label"
-          style="
-            background-image: url('./assets/images/ceyda-ciftci-fr3Nttk364E-unsplash.jpg');
-          "
-        >
-          <div class="container" id="almuerzos">
-            <p class="section-subtitle text-center" data-reveal>Menú</p>
+    </article>
+  </main>
 
-            <h2
-              class="h2 section-title text-center"
-              id="menu-label"
-              data-reveal
-            >
-              Almuerzos
-            </h2>
-
-            <ul class="grid-list">
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Menú del día</h3>
-                    <p>Pregunta por el menú del día</p>
-
-                    <data class="card-price has-before" value="4.9">$15</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Cazuela</h3>
-                    <p>Acompañada de frijoles, chicharrón, chorizo, aguacate, maduro, ripio de papa, maicitos, arroz y ensalada.</p>
-
-                    <data class="card-price has-before" value="4.9">$25</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Bande paisa</h3>
-                    <p>Acompañada de frijoles, chicharron, huevo, maduro, morzilla, chorizo, carne molida, aguacate, arroz y ensalada.</p>
-
-                    <data class="card-price has-before" value="4.9">$35</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Costillas en BBQ</h3>
-                    <p>Costillas de 400gr en crudo bañadas en salsa BBQ, acompañadas de papas criollas al vapor y ensalada.</p>
-
-                    <data class="card-price has-before" value="4.9">$35</data>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Porción de sopa</h3>
-                    <data class="card-price has-before" value="4.9">$8</data>
-                  </div>
-                </div>
-              </li>
-              <h2 style="text-align: center; color: white">Adiciones</h2>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Chicharron</h3>
-                    <data class="card-price has-before" value="4.9">$7</data>
-                  </div>
-                </div>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Pollo</h3>
-                    <data class="card-price has-before" value="4.9">$7</data>
-                  </div>
-                </div>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Cerdo</h3>
-                    <data class="card-price has-before" value="4.9">$7</data>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Carne desmechada</h3>
-                    <data class="card-price has-before" value="4.9">$8</data>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Carne de res</h3>
-                    <data class="card-price has-before" value="4.9">$10</data>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Chorizo</h3>
-                    <data class="card-price has-before" value="4.9">$5</data>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Morzilla</h3>
-                    <data class="card-price has-before" value="4.9">$5</data>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Carne en polvo</h3>
-                    <data class="card-price has-before" value="4.9">$8</data>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card" data-reveal>
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Huevos</h3>
-                    <data class="card-price has-before" value="4.9">$2.5</data>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </article>
-    </main>
-
-    <!-- 
+  <!-- 
     - #FOOTER
   -->
 
-    <footer class="footer" id="footer">
-      <div class="container">
-        <div class="footer-top section" data-reveal>
-          <div class="footer-brand">
-            <a href="#" class="logo">
-              <img src="./assets/images/Dorado.png" alt="logo" />
-            </a>
-          </div>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">Horario</p>
-            </li>
-
-            <li class="footer-list-item">
-              <p>Lunes - Sábado</p>
-
-              <span class="span">8:00 a. m. - 9:00 p. m.</span>
-            </li>
-
-            <li class="footer-list-item">
-              <p>Domingos</p>
-
-              <span class="span">8:00 a. m. - 09:00 p. m.</span>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">Contacto</p>
-            </li>
-
-            <li>
-              <div class="wrapper">
-                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-
-                <div>
-                  <span class="span">Ubicación :</span>
-
-                  <p>Calle 47 - 70A # 30 - Florida nueva</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="wrapper">
-                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
-                <div>
-                  <span class="span">Teléfono :</span>
-
-                  <p>3233408795</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">Galería</p>
-            </li>
-
-            <li>
-              <ul class="grid-list">
-                <li>
-                  <div class="grid-item">
-                    <img
-                      src="./assets/images/Bombom.jpg"
-                      width="80"
-                      height="80"
-                      loading="lazy"
-                      alt="Gallery"
-                      class="w-100"
-                    />
-                  </div>
-                </li>
-
-                <li>
-                  <div class="grid-item">
-                    <img
-                      src="./assets/images/Irlandés.jpg"
-                      width="80"
-                      height="80"
-                      loading="lazy"
-                      alt="Gallery"
-                      class="w-100"
-                    />
-                  </div>
-                </li>
-
-                <li>
-                  <div class="grid-item">
-                    <img
-                      src="./assets/images/TresPasos.jpg"
-                      width="80"
-                      height="80"
-                      loading="lazy"
-                      alt="Gallery"
-                      class="w-100"
-                    />
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top section" data-reveal>
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/Dorado.png" alt="logo" />
+          </a>
         </div>
 
-        <div class="footer-bottom">
-          <p class="copyright">
-            Copyright © 2022 - SaySay - Todos los derechos reservados
-          </p>
-        </div>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Horario</p>
+          </li>
+
+          <li class="footer-list-item">
+            <p>Lunes - Sábado</p>
+
+            <span class="span">8:00 a. m. - 9:00 p. m.</span>
+          </li>
+
+          <li class="footer-list-item">
+            <p>Domingos</p>
+
+            <span class="span">8:00 a. m. - 09:00 p. m.</span>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contacto</p>
+          </li>
+
+          <li>
+            <div class="wrapper">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <div>
+                <span class="span">Ubicación :</span>
+
+                <p>Calle 47 - 70A # 30 - Florida nueva</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <div>
+                <span class="span">Teléfono :</span>
+
+                <p>3233408795</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Galería</p>
+          </li>
+
+          <li>
+            <ul class="grid-list">
+              <li>
+                <div class="grid-item">
+                  <img src="./assets/images/Bombom.jpg" width="80" height="80" loading="lazy" alt="Gallery"
+                    class="w-100" />
+                </div>
+              </li>
+
+              <li>
+                <div class="grid-item">
+                  <img src="./assets/images/Irlandés.jpg" width="80" height="80" loading="lazy" alt="Gallery"
+                    class="w-100" />
+                </div>
+              </li>
+
+              <li>
+                <div class="grid-item">
+                  <img src="./assets/images/TresPasos.jpg" width="80" height="80" loading="lazy" alt="Gallery"
+                    class="w-100" />
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </footer>
 
-    <!-- 
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright © 2022 - SaySay - Todos los derechos reservados
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 
     - custom js link
   -->
-    <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 
-    <!-- 
+  <!-- 
     - ionicon link
   -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
