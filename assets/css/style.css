@@ -807,3 +807,9 @@ body.active {
     gap: 50px;
   }
 }
+
+@media (min-width: 1030px) {
+  .menu .container .botones {
+    justify-content: flex-start;
+  }
+}
