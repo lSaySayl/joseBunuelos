@@ -26,9 +26,9 @@ const toggleNavbar = function () {
   document.body.classList.toggle("active");
   const btnMenu = document.getElementById("btn-menu");
   if (btnMenu.style.display === "none") {
-    btnMenu.style.display = ""; // Restaura el valor por defecto, lo que hará que el botón vuelva a ser visible
+    btnMenu.style.display = ""; 
   } else {
-    btnMenu.style.display = "none"; // Oculta el botón cuando se hace clic en el menú
+    btnMenu.style.display = "none";
   }
 }
 
