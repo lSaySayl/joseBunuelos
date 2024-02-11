@@ -24,6 +24,12 @@ const toggleNavbar = function () {
   navbar.classList.toggle("active");
   this.classList.toggle("active");
   document.body.classList.toggle("active");
+  const btnMenu = document.getElementById("btn-menu");
+  if (btnMenu.style.display === "none") {
+    btnMenu.style.display = ""; // Restaura el valor por defecto, lo que hará que el botón vuelva a ser visible
+  } else {
+    btnMenu.style.display = "none"; // Oculta el botón cuando se hace clic en el menú
+  }
 }
 
 navToggler.addEventListener("click", toggleNavbar);
@@ -33,6 +39,7 @@ const closeNavbar = function () {
   navbar.classList.remove("active");
   navToggler.classList.remove("active");
   document.body.classList.remove("active");
+  console.log("holaaaaa")
 }
 
 addEventOnElements(navbarLinks, "click", closeNavbar);
